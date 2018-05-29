@@ -233,6 +233,8 @@ jQuery(document).ready(function($) {
     console.log(values)
     $.ajax('https://marketing-email-sender.herokuapp.com/sendEmail', {
       type: 'POST',
+      dataType: "json",
+      contentType: "application/json; charset=utf-8",
       data: {
         html: `<h1>Customer Question</h1><br>` + values.message,
         subject: values.subject,
