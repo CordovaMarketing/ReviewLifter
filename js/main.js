@@ -235,12 +235,12 @@ jQuery(document).ready(function($) {
       type: 'POST',
       dataType: "json",
       // contentType: "application/json;",
-      data: {
+      data: JSON.stringify({
         html: `<h1>Customer Question</h1><br>` + values.message,
         subject: values.subject,
         from: values.email,
         to: '<info@reviewlifter.com>'
-      },
+      }),
       success: function(a, b, c) {
         console.log('mail sent: ', b)
       }.bind(this),
