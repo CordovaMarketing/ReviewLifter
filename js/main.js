@@ -231,12 +231,8 @@ jQuery(document).ready(function($) {
       values[this.name] = $(this).val()
     })
     console.log(values)
-    $.ajax('https://api.mailgun.net/v3/reviewlifter.com/messages', {
+    $.ajax('https://marketing-email-sender.herokuapp.com/sendEmail', {
       type: 'POST',
-      headers: {
-        Authorization:
-          'Basic ' + btoa('api:key-8fea8050ead5fed2215fac30f0a29f4a')
-      },
       data: {
         html: `<h1>Customer Question</h1><br>` + values.message,
         subject: values.subject,
