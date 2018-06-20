@@ -1483,7 +1483,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .landing-page {
-  text-decoration-color: whitesmoke;
   color: whitesmoke;
 }
 
@@ -1493,6 +1492,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 .landing-page-middle {
   background-color: whitesmoke;
+  color: black;
   height: 40vh;
 }
 .landing-page-bottom {
