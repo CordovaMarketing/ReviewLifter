@@ -1488,12 +1488,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .landing-page-top {
   background-color: #18d26e;
-  height: 40vh;
+  height: 25vh;
 }
 .landing-page-middle {
   background-color: whitesmoke;
   color: black;
-  height: 100vh;
+  height: 75vh;
 }
 .landing-page-bottom {
   background-color: lightblue;
