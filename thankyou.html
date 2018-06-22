@@ -22,23 +22,42 @@
   <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
   <!-- Main Stylesheet File -->
-  <link href="css/style.css" rel="stylesheet"> </head>
+  <link href="css/style.css" rel="stylesheet">
+  <!-- Facebook Pixel Code -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '205905993389649');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=205905993389649&ev=PageView&noscript=1" /> </noscript>
+  <!-- End Facebook Pixel Code -->
+</head>
 
 <body>
-    <div id="header" style="background-color: black">
-      <div class="container-fluid">
-        <div id="logo" class="pull-left">
-          <h1>
-            <a href="#intro" class="scrollto">ReviewLifter</a>
-          </h1>
-          <!-- Uncomment below if you prefer to use an image logo -->
-          <!-- <a href="#intro"><img src="img/logo.png" alt="" title="" /></a>-->
-        </div>
-        <nav id="nav-menu-container">
-        </nav>
-        <!-- #nav-menu-container -->
+  <div id="header" style="background-color: black">
+    <div class="container-fluid">
+      <div id="logo" class="pull-left">
+        <h1>
+          <a href="#intro" class="scrollto">ReviewLifter</a>
+        </h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="#intro"><img src="img/logo.png" alt="" title="" /></a>-->
       </div>
+      <nav id="nav-menu-container"> </nav>
+      <!-- #nav-menu-container -->
     </div>
+  </div>
   <div class="landing-page container-fluid">
     <div class="row landing-page-middle mt-5">
       <div class="col-md-4"></div>
@@ -49,24 +68,23 @@
       <div class="col-md-4"></div>
     </div>
   </div>
-        
- </main>
-    <script src="lib/jquery/jquery.min.js"></script>
-    <script src="lib/jquery/jquery-migrate.min.js"></script>
-    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/superfish/hoverIntent.js"></script>
-    <script src="lib/superfish/superfish.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
-    <script src="lib/touchSwipe/jquery.touchSwipe.min.js"></script>
-    <!-- Contact Form JavaScript File -->
-    <script src="contactform/contactform.js"></script>
-    <!-- Template Main Javascript File -->
-    <script src="js/main.js"></script> </body>
+  </main>
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="lib/touchSwipe/jquery.touchSwipe.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script> </body>
 
 </html>
