@@ -13,7 +13,7 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
   <!-- Bootstrap CSS File -->
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
     crossorigin="anonymous">
   <!-- Libraries CSS Files -->
   <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
@@ -23,6 +23,7 @@
   <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
+  <script src="https://bootstrapcreative.com/wp-bc/wp-content/themes/wp-bootstrap/codepen/bootstrapcreative.js"></script>
   <!-- Facebook Pixel Code -->
   <script>
     !function (f, b, e, v, n, t, s) {
@@ -90,11 +91,10 @@
                 <h2>Take control of your online reputation</h2>
                 <h4 style="color:white;">We enable businesses to define and strengthen their online reputation through authentic customer reviews.</h4>
                 <a href="#services" class="btn-get-started scrollto">Learn more</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--         <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/tPNefV9KlA4" data-target="#myModal">
+                View Demo </button>
+                <!--         <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon ion-chevron-left" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
           </a>
@@ -103,9 +103,25 @@
             <span class="carousel-control-next-icon ion-chevron-right" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
           </a> -->
+              </div>
+            </div>
+  </section>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <!-- 16:9 aspect ratio -->
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always">></iframe>
+          </div>
+        </div>
       </div>
     </div>
-  </section>
+  </div>
   <!-- #intro -->
   <main id="main">
     <!--==========================
@@ -192,7 +208,7 @@
       <div class="container text-center">
         <h3>Your customers are waiting to leave a review!</h3>
         <p> Positive reviews often fall through the cracks because no one asks those customers to leave a review.</p>
-        <a class="cta-btn" target="_blank" href="http://app.reviewlifter.com">Get our software</a>
+        <a class="cta-btn scrollto" href="#contact">Get our software</a>
       </div>
     </section>
     <!-- #call-to-action -->
@@ -237,26 +253,31 @@
           <p>Leave us your details and we will contact you within 24 hours</p>
         </div>
         <div class="row contact-info">
-          <div class="col-md-6">
-            <div class="contact-phone">
-              <i class="ion-ios-telephone-outline"></i>
-              <h3>Phone Number</h3>
-              <p>
-                <a href="tel:+155895548855">714-410-1863 (Call or Text)</a>
-              </p>
-            </div>
-            <div class="col-md-6">
-              <div class="contact-email">
-                <i class="ion-ios-email-outline"></i>
-                <h3>Email</h3>
-                <p>
-                  <a href="mailto:info@reviewlifter.com">info@reviewlifter.com</a>
-                </p>
-              </div>
-            </div>
+          <div class="col-md-2"></div>
+          <div class="col-md-4">
+            <i class="ion-ios-telephone-outline"></i>
+            <h3>Phone Number</h3>
+            <p>
+              <a href="tel:+155895548855">714-410-1863 (Text or Call)</a>
+            </p>
+          </div>
+          <div class="col-md-4">
+            <i class="ion-ios-email-outline"></i>
+            <h3>Email</h3>
+            <p>
+              <a href="mailto:info@reviewlifter.com">info@reviewlifter.com</a>
+            </p>
           </div>
         </div>
-        <div class="form">
+        <br>
+        <br>
+        <h3 class="text-center">Schedule a Demo below</h3>
+        <br>
+        <!-- Calendly inline widget begin -->
+        <div class="calendly-inline-widget" data-url="https://calendly.com/cs-reviewlifter/demo" style="min-width:320px;height:480px;"></div>
+        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+        <!-- Calendly inline widget end -->
+        <!-- <div class="form">
           <div id="sendmessage">Your message has been sent. Thank you!</div>
           <div id="errormessage"></div>
           <form action="" method="post" role="form" class="contactForm">
@@ -284,8 +305,7 @@
               <button type="submit">Send Message</button>
             </div>
           </form>
-        </div>
-      </div>
+        </div> --></div>
     </section>
     <!-- #contact -->
   </main>
@@ -323,7 +343,7 @@
           </div>
           <div class="col-lg-3 col-md-6 footer-contact">
             <h4>Contact Us</h4>
-            <strong>Phone:</strong> 714-410-1863 (Call or Text)
+            <strong>Phone:</strong> 714-410-1863 (Text or Call)
             <br>
             <strong>Email:</strong> info@reviewlifter.com
             <br> </p>
@@ -342,14 +362,13 @@
                 </a> -->
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 footer-newsletter">
+          <!-- <div class="col-lg-3 col-md-6 footer-newsletter">
             <h4>Our Newsletter</h4>
             <p>Sign up to hear the latest on getting reviews</p>
             <form action="" method="post">
               <input type="email" name="email">
               <input type="submit" value="Subscribe"> </form>
-          </div>
-        </div>
+          </div> --></div>
       </div>
     </div>
     <div hidden class="container">
@@ -366,7 +385,10 @@
   <!-- JavaScript Libraries -->
   <script src="lib/jquery/jquery.min.js"></script>
   <script src="lib/jquery/jquery-migrate.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
   <script src="lib/easing/easing.min.js"></script>
   <script src="lib/superfish/hoverIntent.js"></script>
   <script src="lib/superfish/superfish.min.js"></script>

@@ -233,8 +233,8 @@ jQuery(document).ready(function($) {
     console.log(values)
     $.ajax('https://marketing-email-sender.herokuapp.com/sendEmail', {
       type: 'POST',
-      dataType: "json",
-      contentType: "application/json; charset=utf-8",
+      dataType: 'json',
+      contentType: 'application/json; charset=utf-8',
       data: JSON.stringify({
         html: `<h1>Customer Question</h1><br>` + values.message,
         subject: values.subject,
@@ -249,5 +249,28 @@ jQuery(document).ready(function($) {
       }
     })
     event.preventDefault()
+  })
+
+  // CUSTOM CUSTOM CUSTOM
+
+  var $videoSrc
+  $('.video-btn').click(function() {
+    $videoSrc = $(this).data('src')
+    console.log($videoSrc)
+  })
+
+  // when the modal is opened autoplay it
+  $('#myModal').on('shown.bs.modal', function(e) {
+    // set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
+    $('#video').attr(
+      'src',
+      $videoSrc + '?rel=0&amp;showinfo=0&amp;modestbranding=1&amp;autoplay=1'
+    )
+  })
+
+  // stop playing the youtube video when I close the modal
+  $('#myModal').on('hide.bs.modal', function(e) {
+    // a poor man's stop video
+    $('#video').attr('src', $videoSrc)
   })
 })
